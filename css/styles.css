@@ -61,6 +61,12 @@ ul{
     justify-content: space-between;
     gap: 50px;
 }
+.menu_contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+}
 .container{
     margin: auto;
     width: 1200px;
@@ -76,11 +82,13 @@ ul{
     font-size: 26px;
     column-gap: 92px;
     padding-right: 93px;
-    
+    outline: none;
+    display: flex;
 }
 
 .header_link{
     color: var(--color_black);
+    outline: none;
     
 }
 .header_link:hover{
@@ -95,10 +103,18 @@ ul{
 .header_link.current{
     color: var(--color_blue);
 }
-
+.icon_contacts{
+    width: 16px;
+    height: 12px;
+    padding-right: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-right-width: 10px;
+}
 
 .cel_contact{
     color:var(--color_gray);
+    outline: none;
 }
 .cel_contact:focus{
     color:var(--color_gray);
@@ -114,6 +130,8 @@ ul{
 }
 .email_contact{
     color:var(--color_gray);
+    outline: none;
+    gap: 15px;
 }
 .email_contact:focus{
     color:var(--color_blue)
@@ -168,6 +186,7 @@ ul{
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    outline: none;
 }
 .about_list{
     margin: auto;
@@ -176,7 +195,10 @@ ul{
     width: 1200px;
     padding-top: 95px;
     column-gap: 30px;
-
+}
+.icon_about{
+    width: 270px;
+    height: 120px;
 }
 
 .about_item{
@@ -250,6 +272,8 @@ ul{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
+    width: 270px;
+    height: 428px;
 }
 .target{
     width: 270px;
@@ -269,35 +293,54 @@ ul{
     font-family: inherit;
     text-align: center;
     font-weight: 400;
-    size: 16px;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin-bottom: 24px; 
     height: 19px;
+    width: 270px;
 }
 .job_name{
     color: var(--color_black);
     font-family: inherit;
     font-weight: 500;
-    size: 16px;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
     height: 19px;
 }
 .icon_svg{
+    fill:var(--color_gray);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    gap: 34px;
+    cursor: pointer;
+    height: 44px;
+}
+
+.svg_redes{
     height: 20px;
     width: 20px;
-    margin: auto;
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    padding-left: ;
+    
 }
+.svg_redes:hover{
+    fill:var(--color_white);
+    background-color: var(--color_blue);
+    border-radius: 50%;
+
+}
+
 .main__footer{
     background-color: var(--color_black);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.main__address{
+    display: flex;
+    flex-direction:row;
 }
 .footer_address{
     color: var(--color_white);
@@ -306,6 +349,7 @@ ul{
     size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    outline: none;
 }
 .footer_contact{
     color: var(--color_footer);
@@ -315,6 +359,7 @@ ul{
     line-height: 1.7;
     letter-spacing: 0.03em;
     padding-bottom: 60px;
+    outline: none;
 }
 .footer_address:hover{
     color: var(--color_blue);
@@ -334,7 +379,41 @@ ul{
 .footer_contact:focus-within{
     color: var(--color_blue);
 }
-
+.Redes_footer{
+    color:var(--color_white);
+    padding-top:;
+    height: 20px;
+    width: 20px;
+}
+.logo_footer{
+    display: flex;
+    justify-content: center;
+    
+}
+.Contact_redes{
+    padding-left: 156px;
+    color:var(--color_white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height:1.1;
+    display: flex;
+    
+}
+.container_address{
+    width: 231px;
+}
+.svg_footer{
+    fill:var(--color_gray);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    gap: 34px;
+    cursor: pointer;
+    height: 44px;
+    margin-left: 112px;
+    margin-top: 20px;
+}
 /*inicio pagina portfolio */
 .portafolio{
     display: none;
@@ -359,30 +438,12 @@ ul{
     font-size: 16px;
     line-height: 1.6;
     font-size: 16px;
-    line-height: 1.62;
     border-radius: 4px;
     letter-spacing: 0.05em;
 
 }
-.button_todo{
-    width: 73px;
-    height: 38px;
-}
-.button_sitio{
-    width: 128px;
-    height: 38px;
-}
-.button_aplicaciones{
-    width: 145px;
-    height: 38px;
-}
-.button_diseño{
-    width: 103px;
-    height: 38px;
-}
-.button_marketing{
-    width: 130px;
-    height: 38px;
+.button_nav{
+    padding: 6px 26px;
 }
 .button_item:focus{
     background-color: var(--color_blue);
