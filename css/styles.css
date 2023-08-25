@@ -110,16 +110,26 @@ ul{
     margin-right: 10px;
     margin-left: 10px;
     border-right-width: 10px;
+    cursor: pointer;
+    color: var(--color_gray);
 }
-
+.icon_contacts:hover {
+    fill:var(--color_blue);
+}
+.icon_contacts:focus{
+    fill:var(--color_blue);
+}
+.icon_contacts:focus-within{
+    fill:var(--color_blue);
+}
 .cel_contact{
     color:var(--color_gray);
     outline: none;
 }
-.cel_contact:focus{
+.cel_contact:focus {
     color:var(--color_gray);
 }
-.cel_contact:focus-within{
+.cel_contact:focus-within {
     color:var(--color_blue)
 }
 .cel_contact:hover{
@@ -303,30 +313,47 @@ ul{
 .job_name{
     color: var(--color_black);
     font-family: inherit;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: center;
     height: 19px;
 }
 .icon_svg{
     fill:var(--color_gray);
+    cursor: pointer;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 270px;
-    gap: 34px;
-    cursor: pointer;
-    height: 44px;
+    
 }
 
+.footer_iconos{
+    fill:var(--color_gray);
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 270px;
+    margin-left: 90px;
+    margin-top: 13px;
+    
+}
 .svg_redes{
     height: 20px;
     width: 20px;
     
 }
-.svg_redes:hover{
+.bg_redes{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.bg_redes:hover{
     fill:var(--color_white);
     background-color: var(--color_blue);
     border-radius: 50%;
@@ -402,22 +429,30 @@ ul{
 .container_address{
     width: 231px;
 }
-.svg_footer{
-    fill:var(--color_gray);
-    display:flex;
+
+.bg_footer{
+    height: 40px;
+    width: 40px;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    gap: 34px;
-    cursor: pointer;
-    height: 44px;
-    margin-left: 112px;
-    margin-top: 20px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+}
+.bg_footer:hover{
+    fill:var(--color_white);
+    background-color: var(--color_blue);
+    border-radius: 50%;
+}
+.svg_foter{
+    height: 20px;
+    width: 20px;
+    fill: var(--color_white);
+    
 }
 /*inicio pagina portfolio */
 .portafolio{
     display: none;
-    
 }
 .list_button{
     border-style: none;
