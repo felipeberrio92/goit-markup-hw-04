@@ -103,6 +103,10 @@ ul{
 .header_link.current{
     color: var(--color_blue);
 }
+.mail_contact.current{
+    fill:var(--color_blue);
+    color:var(--color_blue);
+}
 .icon_contacts{
     width: 16px;
     height: 12px;
@@ -111,7 +115,7 @@ ul{
     margin-left: 10px;
     border-right-width: 10px;
     cursor: pointer;
-    color: var(--color_gray);
+    fill: var(--color_gray);
 }
 .icon_contacts:hover {
     fill:var(--color_blue);
@@ -126,10 +130,10 @@ ul{
     color:var(--color_gray);
     outline: none;
 }
-.cel_contact:focus {
+.cel_contact:focus{
     color:var(--color_gray);
 }
-.cel_contact:focus-within {
+.cel_contact:focus-within{
     color:var(--color_blue)
 }
 .cel_contact:hover{
@@ -164,11 +168,16 @@ ul{
 }
 .head_title{
     color: var(--color_white);
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--color_black);
     text-align:center;
 
 }
-
+.bg_imagen{
+    background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(0, 0, 0, 0.4)),
+        url("../images/services/bg_imagen.jpg");
+    background-size: cover;
+    background-position: bottom center;
+}   
 .main_title{
     font-family: inherit;
     text-align: center;
@@ -207,8 +216,9 @@ ul{
     column-gap: 30px;
 }
 .icon_about{
-    width: 270px;
-    height: 120px;
+    width: 226px;
+    height: 70px;
+    
 }
 
 .about_item{
@@ -249,8 +259,8 @@ ul{
     line-height: 1.16;
     font-size: 36px;
     letter-spacing: 0.03em;
-    padding-bottom: 55px;
-    margin-top: 94px;
+    padding-bottom: 44px;
+    margin-top: 153px;
 }
 .headings_team{
     color: var(--color_black);
@@ -321,26 +331,14 @@ ul{
     height: 19px;
 }
 .icon_svg{
-    fill:var(--color_gray);
     cursor: pointer;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
     width: 270px;
-    
+    padding-left: 0px;
 }
 
-.footer_iconos{
-    fill:var(--color_gray);
-    cursor: pointer;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 270px;
-    margin-left: 90px;
-    margin-top: 13px;
-    
-}
 .svg_redes{
     height: 20px;
     width: 20px;
@@ -357,13 +355,65 @@ ul{
     fill:var(--color_white);
     background-color: var(--color_blue);
     border-radius: 50%;
-
+    
 }
-
+.container_clientes{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--color_gray);
+}
+.border_svg{
+    width: 170px;
+    height: 71px;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    justify-content: center;
+    display: flex;
+}
+.border_svg:hover{
+    border-color:var(--color_blue);
+    fill:var(--color_blue);
+    
+}
+.border_svg:focus{
+    border-color:var(--color_blue);
+    fill: var(--color_blue);
+}
+.border_svg:focus-within{
+    border-color:var(--color_blue);
+    fill: var(--color_blue);
+}
+.svg_cliente{
+    width: 170px;
+    height: 53px;
+    padding: 8.7px 10.564px 3.503px 11px;
+    fill: var(--color_gray);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.svg_cliente:hover{
+    fill: var(--color_blue);
+    
+}
+.svg_cliente:focus{
+    fill: var(--color_blue);
+    
+}
+.svg_cliente:focus-within{
+    fill: var(--color_blue);
+    
+}
 .main__footer{
     background-color: var(--color_black);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: 151px;
 }
 .main__address{
     display: flex;
@@ -377,6 +427,17 @@ ul{
     line-height: 1.7;
     letter-spacing: 0.03em;
     outline: none;
+}
+.footer_iconos{
+    fill:var(--color_gray);
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 270px;
+    margin-left: 90px;
+    margin-top: 13px;
+    
 }
 .footer_contact{
     color: var(--color_footer);
@@ -501,9 +562,10 @@ ul{
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 92px;
-    
+    cursor: pointer;
+    border-radius: 4px;
 }
-.border{
+.border:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid rgb(238, 238, 238);
     background: rgb(255, 255, 255);
