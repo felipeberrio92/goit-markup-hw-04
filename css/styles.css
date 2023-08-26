@@ -46,13 +46,13 @@ ul{
     text-align: center;
     align-items: center;
     margin: auto;
+
     
 }
 .menu_navigation{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 344px;
     padding: 32px 0px;
 }
 .menu_list{
@@ -60,12 +60,15 @@ ul{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
+    margin-right: 306px;
+    text-align: center;
 }
 .menu_contact{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0px;
+    margin-bottom: 8px;
 }
 .container{
     margin: auto;
@@ -84,6 +87,7 @@ ul{
     padding-right: 93px;
     outline: none;
     display: flex;
+    margin-bottom: 12px;
 }
 
 .header_link{
@@ -108,11 +112,8 @@ ul{
     color:var(--color_blue);
 }
 .icon_contacts{
-    width: 16px;
-    height: 12px;
     padding-right: 0px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 30px;
     border-right-width: 10px;
     cursor: pointer;
     fill: var(--color_gray);
@@ -145,7 +146,7 @@ ul{
 .email_contact{
     color:var(--color_gray);
     outline: none;
-    gap: 15px;
+
 }
 .email_contact:focus{
     color:var(--color_blue)
@@ -159,7 +160,17 @@ ul{
 .email_contact:active{
     color: var(--color_blue);
 }
-
+.icon_sobre{
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+}
+.icon_cel{
+    width: 10px; 
+    height: 16px;
+    margin-right: 10px;
+}
 .head_container{
     width: 1200px;
     padding-left: 15px;
@@ -359,10 +370,11 @@ ul{
     
 }
 .container_clientes{
+    width: 1200px;
+    padding-left: 0px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
