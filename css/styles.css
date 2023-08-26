@@ -337,6 +337,7 @@ ul{
     justify-content: space-evenly;
     width: 270px;
     padding-left: 0px;
+    fill:var(--color_gray);
 }
 
 .svg_redes{
@@ -392,23 +393,11 @@ ul{
     width: 170px;
     height: 53px;
     padding: 8.7px 10.564px 3.503px 11px;
-    fill: var(--color_gray);
     align-items: center;
     justify-content: center;
     display: flex;
 }
-.svg_cliente:hover{
-    fill: var(--color_blue);
-    
-}
-.svg_cliente:focus{
-    fill: var(--color_blue);
-    
-}
-.svg_cliente:focus-within{
-    fill: var(--color_blue);
-    
-}
+
 .main__footer{
     background-color: var(--color_black);
     padding-top: 60px;
