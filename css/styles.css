@@ -460,10 +460,16 @@ ul{
 }
 
 .main__footer{
-    background-color: var(--color_black);
+    background-color: rgba(47, 48, 58, 1);
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 151px;
+}
+.main__footer_portafolio{
+    background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 142px;
 }
 .main__address{
     display: flex;
@@ -622,7 +628,6 @@ ul{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 92px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -633,10 +638,10 @@ ul{
 }
 .border:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgb(238, 238, 238);
-    background: rgb(255, 255, 255);
-    height: 404;
-    width: 370px;
+    
+}
+.border:focus{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     
 }
 
