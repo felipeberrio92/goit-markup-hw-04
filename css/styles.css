@@ -8,8 +8,11 @@
     --color_gray: rgba(117, 117, 117, 1);
     --color_footer: rgba(255, 255, 255, 0.6);
     --color_white: rgba(255, 255, 255, 1);
-
-
+    --color_icon_gray: rgba(175, 177, 184, 1);
+    --color_icono_cliente_blue:  rgba(33, 150, 243, 1);
+    --color_icono_redes: rgba(175, 177, 184, 1);
+    --color_fondo_redes: rgba(33, 150, 243, 1);
+    
 }
 .links{
     font-weight: 500;
@@ -39,6 +42,10 @@ ul{
     margin: 0;
     padding: 0;
 }
+.shadow_header{
+    border-bottom:rgba(47, 48, 58, 0.40) 1px solid;
+
+}
 
 .headers_navigation{
     display: flex;
@@ -46,14 +53,15 @@ ul{
     text-align: center;
     align-items: center;
     margin: auto;
-
     
 }
 .menu_navigation{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 32px 0px;
+    padding-top: 26px;
+    padding-bottom: 26.5px;
+    align-items: center;
 }
 .menu_list{
     display: flex;
@@ -68,7 +76,7 @@ ul{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0px;
-    margin-bottom: 8px;
+    align-items: center;
 }
 .container{
     margin: auto;
@@ -218,18 +226,30 @@ ul{
     justify-content: center;
     outline: none;
 }
+.button:hover{
+    box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
+}
+.button:focus-within{
+    box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
+}
+.button:focus{
+    box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
+}
 .about_list{
+    font-family: 'Roboto';
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-    padding-top: 95px;
+    padding-top: 82px;
     column-gap: 30px;
+
 }
+
 .icon_about{
-    width: 226px;
-    height: 70px;
-    
+    width: 270px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .about_item{
@@ -239,6 +259,8 @@ ul{
     line-height: 1.1;
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
 }
 .about_item:hover{
@@ -246,6 +268,7 @@ ul{
 }
 .about_text{
     font-family:inherit;
+    font-style: normal;
     color:var(--color_gray);
     font-weight: 400;
     line-height: 1.7;
@@ -270,8 +293,8 @@ ul{
     line-height: 1.16;
     font-size: 36px;
     letter-spacing: 0.03em;
-    padding-bottom: 44px;
-    margin-top: 153px;
+    padding-bottom: 50px;
+    margin-top: 99px;
 }
 .headings_team{
     color: var(--color_black);
@@ -282,7 +305,7 @@ ul{
     font-size: 36px;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
-    margin-top: 155px;
+    margin-top: 188px;
 }
 .images_services{
     display: flex;
@@ -290,7 +313,7 @@ ul{
     align-items: center;
     text-align: center;
     width: 1200px;
-    gap: 30px;
+    column-gap: 37px;
     
 }
 
@@ -362,12 +385,22 @@ ul{
     align-items: center;
     justify-content: center;
     display: flex;
+    fill: var(--color_icono_redes);
 }
 .bg_redes:hover{
     fill:var(--color_white);
-    background-color: var(--color_blue);
+    background-color: var(--color_fondo_redes);
     border-radius: 50%;
-    
+}
+.bg_redes:focus{
+    fill:var(--color_white);
+    background-color: var(--color_fondo_redes);
+    border-radius: 50%;
+}
+.bg_redes:focus-within{
+    fill:var(--color_white);
+    background-color: var(--color_fondo_redes);
+    border-radius: 50%;
 }
 .container_clientes{
     width: 1200px;
@@ -378,7 +411,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    fill: var(--color_gray);
+    fill: var(--color_icon_gray);
 }
 .border_svg{
     width: 170px;
@@ -389,17 +422,33 @@ ul{
     display: flex;
 }
 .border_svg:hover{
-    border-color:var(--color_blue);
-    fill:var(--color_blue);
+    border-color:var(--color_icono_cliente_blue);
+    fill:var(--color_icono_cliente_blue);
     
 }
 .border_svg:focus{
-    border-color:var(--color_blue);
-    fill: var(--color_blue);
+    border-color:var(--color_icono_cliente_blue);
+    fill: var(--color_icono_cliente_blue);
 }
 .border_svg:focus-within{
-    border-color:var(--color_blue);
+    border-color:var(--color_icono_cliente_blue);
+    fill: var(--color_icono_cliente_blue);
+}
+.clientes_links{
+    fill: var(--color_icon_gray);
+    outline-color: var(--color_blue);
+}
+.clientes_links:hover{
     fill: var(--color_blue);
+    outline-color: var(--color_blue);
+}
+.clientes_links:focus{
+    fill: var(--color_blue);
+    outline-color: var(--color_blue);
+}
+.clientes_links:focus-within{
+    fill: var(--color_blue);
+    outline-color: var(--color_blue);
 }
 .svg_cliente{
     width: 170px;
@@ -503,7 +552,17 @@ ul{
 }
 .bg_footer:hover{
     fill:var(--color_white);
-    background-color: var(--color_blue);
+    background-color: var(--color_icono_cliente_blue);
+    border-radius: 50%;
+}
+.bg_footer:focus{
+    fill:var(--color_white);
+    background-color: var(--color_icono_cliente_blue);
+    border-radius: 50%;
+}
+.bg_footer:focus-within{
+    fill:var(--color_white);
+    background-color: var(--color_icono_cliente_blue);
     border-radius: 50%;
 }
 .svg_foter{
@@ -537,7 +596,7 @@ ul{
     font-size: 16px;
     border-radius: 4px;
     letter-spacing: 0.05em;
-
+    outline: none;
 }
 .button_nav{
     padding: 6px 26px;
@@ -545,7 +604,8 @@ ul{
 .button_item:focus{
     background-color: var(--color_blue);
     color: var(--color_white);
-    
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 .button_item:hover{
     background-color: var(--color_blue);
@@ -556,7 +616,7 @@ ul{
     size: 16px;
     letter-spacing: 0.03em;
     cursor: pointer;
-    
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .card_photo{
     display: flex;
@@ -566,6 +626,11 @@ ul{
     cursor: pointer;
     border-radius: 4px;
 }
+.border{
+    height: 404;
+    width: 370px;
+    
+}
 .border:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid rgb(238, 238, 238);
@@ -574,12 +639,7 @@ ul{
     width: 370px;
     
 }
-.cuadricula{
-    flex-basis: calc((100% -2 * 2px) / 3);
-    flex-wrap: wrap;
-    justify-content:center;
-    height: 322;
-}
+
 .proyect_name{
     color: var(--color_black);
     font-family: inherit;
