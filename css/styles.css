@@ -96,6 +96,7 @@ ul{
     outline: none;
     display: flex;
     margin-bottom: 12px;
+    align-items: center;
 }
 
 .header_link{
